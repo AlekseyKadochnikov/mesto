@@ -40,8 +40,8 @@ function addProfile() {
     let name = document.querySelector('.input__text_type_name');
     let job = document.querySelector('.input__text_type_job');
 
-    let profileName = document.querySelector('.profile-info__text_type_name');
-    let profileJob = document.querySelector('.profile-info__text_type_job');
+    let profileName = document.querySelector('.text_type_name');
+    let profileJob = document.querySelector('.text_type_job');
 
 profileName.textContent = name.value;
 profileJob.textContent = job.value;

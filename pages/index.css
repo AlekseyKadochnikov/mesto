@@ -11,6 +11,7 @@
 @import url(../bloks/profile/profile.css);
 @import url(../bloks/avatar/avatar.css);
 @import url(../bloks/profile-info/profile-info.css);
+@import url(../bloks/profile-info/__text/profile-info__text.css);
 @import url(../bloks/form/__edit-btn/form__edit-btn.css);
 @import url(../bloks/text/text.css);
 @import url(../bloks/text/_type/text_type_name.css);
