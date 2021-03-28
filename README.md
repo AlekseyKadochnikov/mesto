@@ -37,5 +37,5 @@
 * Закрепить навыки работы с GitHab
 * Научиться вызывать формы, передавать значения, используя JS
 
-[Ссылка на проект](https://alekseykadochnikov.github.io/russian-travel/)
+[Ссылка на проект]( https://alekseykadochnikov.github.io/mesto)
 
