@@ -1,0 +1,18 @@
+.popup {
+    font-family: 'Inter', Arial, sans-serif;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #000;
+    visibility: hidden;
+
+}
+
+@media screen and (max-width: 767px){
+    .popup {
+
+    }
+
+}

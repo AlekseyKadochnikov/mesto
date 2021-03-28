@@ -1,0 +1,24 @@
+.form__edit-btn {
+    border: 1px solid #ffffff;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+    background: black url("../../../images/edit-button.svg") no-repeat center center;
+    cursor: pointer;
+}
+
+.form__edit-btn:hover {
+    opacity: .6;
+    -webkit-transition: linear, .8s;
+    -o-transition: linear, .8s;
+    transition: linear, .8s;
+}
+
+@media screen and (max-width: 767px){
+    .form__edit-btn {
+        margin-left: 10px;
+        width: 18px;
+        height: 18px;
+    }
+}

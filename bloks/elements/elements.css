@@ -1,0 +1,26 @@
+.elements {
+    font-family: 'Inter', Arial, sans-serif;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 282px 17px 282px 17px 282px;
+    grid-template-columns: repeat(3, 282px);
+    gap: 20px 17px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media  screen and (max-width: 1023px){
+    .elements {
+        -ms-grid-columns: (282px)[2];
+        grid-template-columns: repeat(2, 282px);
+    }
+}
+
+@media  screen and (max-width: 767px){
+    .elements {
+        -ms-grid-columns: 282px;
+        grid-template-columns: repeat(1, 282px);
+        gap: 20px;
+    }
+}

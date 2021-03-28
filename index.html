@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page">
+    <div class="popup form">
+        <div class="popup__overlay"></div>
+        <div class="popup__content">
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <div class="input">
+            <input type="text" placeholder="Фамилия Имя" value="" class="input__text input__text_type_name">
+            <input type="text" placeholder="Профессия" value="" class="input__text input__text_type_job">
+            <button type=submit class="form__submit-btn form__submit-btn_action_save">Сохранить</button>
+            <button type=button class="form__close-btn"></button>
+            </div>
+        </div>
+    </div>
+    <div class="page__container">
+        <header class="header section page__header header__line">
+            <img src="./images/logo_mesto.svg" alt="Логотип" class="header__logo">
+        </header>
+        <main class="content section page__content">
+            <section class="profile page__profile section">
+                    <div class="profile-info section">
+                        <img src="./images/avatar.jpg" alt="Аватар" class="avatar">
+                        <div class="profile-info__text">
+                            <p class="profile-info__text_type_name">Жак-Ив Кусто</p>
+                            <button type=button class="form__edit-btn"></button>
+                            <p class="profile-info__text_type_job">Исследователь океана</p>
+                        </div>
+
+                    </div>
+                    <button type=submit class="form__add-btn"></button>
+            </section>
+            <section class="elements section page__elements">
+                <div class="card">
+                    <img src="./images/kirill-pershin-1088404-unsplash.png" alt="" class="card__image">
+                <div class="card__title">
+                    <h2 class="card__title-text">Карачаевск</h2>
+                    <img src="./images/like.svg" alt="" class="card__like">
+                </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/kirill-pershin-1404681-unsplash.png" alt="" class="card__image">
+                    <div class="card__title">
+                        <h2 class="card__title-text">Карачаевск</h2>
+                        <img src="./images/like.svg" alt="" class="card__like">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/kirill-pershin-1556355-unsplash.png" alt="" class="card__image">
+                    <div class="card__title">
+                        <h2 class="card__title-text">Карачаевск</h2>
+                        <img src="./images/like.svg" alt="" class="card__like">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/kirill-pershin-1404681-unsplash.png" alt="" class="card__image">
+                    <div class="card__title">
+                        <h2 class="card__title-text">Карачаевск</h2>
+                        <img src="./images/like.svg" alt="" class="card__like">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/kirill-pershin-1556355-unsplash.png" alt="" class="card__image">
+                    <div class="card__title">
+                        <h2 class="card__title-text">Карачаевск</h2>
+                        <img src="./images/like.svg" alt="" class="card__like">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/kirill-pershin-1088404-unsplash.png" alt="" class="card__image">
+                    <div class="card__title">
+                        <h2 class="card__title-text">Карачаевск</h2>
+                        <img src="./images/like.svg" alt="" class="card__like">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer page__footer">
+            <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

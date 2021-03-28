@@ -1,0 +1,25 @@
+.form__add-btn {
+    width: 150px;
+    height: 50px;
+    background: black url("../../../images/add-button.svg") no-repeat center center;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.form__add-btn:hover {
+    opacity: .6;
+    -webkit-transition: linear, .5s;
+    -o-transition: linear, .5s;
+    transition: linear, .5s;
+}
+
+@media screen and (max-width: 767px){
+    .form__add-btn {
+        width: 282px;
+        height: 50px;
+    }
+}
