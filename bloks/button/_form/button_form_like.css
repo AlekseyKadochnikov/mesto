@@ -1,0 +1,16 @@
+.button_form_like {
+    border: none;
+    padding: 0;
+    width: 22px;
+    height: 19px;
+    margin: 5px 5px 1px 0;
+    background: url("../../../images/like.svg") no-repeat center center;
+    cursor: pointer;
+}
+
+.button_form_like:hover {
+    opacity: .6;
+    -webkit-transition: linear, .8s;
+    -o-transition: linear, .8s;
+    transition: linear, .8s;
+}
