@@ -1,14 +1,12 @@
 .header {
     font-family: 'Inter', Arial, sans-serif;
     color: #fff;
-    height: 74px;
     border-bottom: 1px solid #545454;
     opacity: .7;
 }
 
 @media screen  and (max-width: 879px){
     .header {
-        height: 56px;
         padding-left: 27px;
     }
 }

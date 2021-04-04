@@ -1,56 +1,51 @@
+let content = document.querySelector('.content');
 let popup = document.querySelector('.popup');
-let content = document.querySelector('.content')
-let openPopupBtn = content.querySelector('.button_form_edit-btn');
-let closePopupBtn = popup.querySelector('.button_form_close-btn');
-let savePopupBtn = popup.querySelector('.button_action_save');
-let popupOverlay = popup.querySelector('.popup__overlay');
-let likeBtn = document.querySelector('.button_form_like');
+let popupContent = popup.querySelector('.popup__content');
+let openPopupBtn = content.querySelector('#open_popup-btn');
+let closePopupBtn = popup.querySelector('#close_popup-btn');
+let savePopupBtn = popup.querySelector('#save_popup-btn');
+let likeBtns = document.querySelectorAll('.card__btn-like');
+let name = popup.querySelector('.popup__text_type_name');
+let job = popup.querySelector('.popup__text_type_job');
+
+let profileName = content.querySelector('.profile-info__title');
+let profileJob = content.querySelector('.profile-info__job');
+
 
 function openPopup() {
-    popup.classList.add('popup__visible');
+    popup.classList.add('popup_visible');
+    name.value = profileName.textContent;
+    job.value = profileJob.textContent;
 }
 
 function closePopup() {
-    popup.classList.remove('popup__visible');
+    popup.classList.remove('popup_visible');
 }
-
-function likeActive() {
-    likeBtn.classList.add('button_position_active');
-}
-openPopupBtn.addEventListener('click', function() {
-    openPopup();
-});
-
-
-closePopupBtn.addEventListener('click', function (){
-    closePopup();
-});
-popupOverlay.addEventListener('click', function () {
-    closePopup();
-});
+// popupOverlay.addEventListener('click', closePopup);
+openPopupBtn.addEventListener('click', openPopup);
+closePopupBtn.addEventListener('click', closePopup);
 
 savePopupBtn.addEventListener('click', function () {
     closePopup();
+    addProfile();
 });
 
-document.querySelector('.popup').addEventListener('keyup', function (event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.querySelector(".button_action_save").click();
-        }
-});
+
 
 function addProfile() {
-    let name = document.querySelector('.input__text_type_name');
-    let job = document.querySelector('.input__text_type_job');
-
-    let profileName = document.querySelector('.text_type_name');
-    let profileJob = document.querySelector('.text_type_job');
-
-profileName.textContent = name.value;
-profileJob.textContent = job.value;
+    profileName.textContent = name.value;
+    profileJob.textContent = job.value;
 }
+popupContent.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        savePopupBtn.click();
+    }
+});
 
-savePopupBtn.addEventListener('click', addProfile);
-
-likeBtn.addEventListener('click', likeActive);
+for (let i = 0; i < likeBtns.length; i+=1){
+    let currentLikeBtn = likeBtns[i];
+    currentLikeBtn.addEventListener('click', function (){
+        likeBtns[i].classList.add('card__btn-like_position_active');
+    });
+}

@@ -1,0 +1,24 @@
+.profile-info__btn_form_edit-btn {
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+    background: black url("../../../../images/edit-button.svg") no-repeat center center;
+    background-size: 10px 10px;
+    border: 1px solid #ffffff;
+}
+
+.profile-info__btn_form_edit-btn:hover {
+    opacity: .6;
+    -webkit-transition: linear, .8s;
+    -o-transition: linear, .8s;
+    transition: linear, .8s;
+}
+
+@media screen and (max-width: 767px){
+    .profile-info__btn_form_edit-btn {
+        margin-left: 10px;
+        width: 18px;
+        height: 18px;
+        background-size: 7.5px 7.5px;
+    }
+}

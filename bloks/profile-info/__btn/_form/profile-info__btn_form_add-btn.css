@@ -1,16 +1,12 @@
-.button_form_add-btn {
+.profile-info__btn_form_add-btn {
     width: 150px;
     height: 50px;
-    background: black url("../../../images/add-button.svg") no-repeat center center;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    background: black url("../../../../images/add-button.svg") no-repeat center center;
     border: 2px solid white;
     border-radius: 2px;
-    cursor: pointer;
 }
 
-.button_form_add-btn:hover {
+.profile-info__btn_form_add-btn:hover {
     opacity: .6;
     -webkit-transition: linear, .5s;
     -o-transition: linear, .5s;
@@ -18,7 +14,7 @@
 }
 
 @media screen and (max-width: 767px){
-    .button_form_add-btn {
+    .profile-info__btn_form_add-btn {
         width: 282px;
         height: 50px;
     }

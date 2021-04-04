@@ -1,5 +1,5 @@
-.button_form_close-btn {
-    background-image: url("../../../images/close Icon.svg");
+.popup__btn_form_close-btn {
+    background-image: url("../../../../images/close Icon.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #000;
@@ -8,11 +8,10 @@
     position: absolute;
     right: -40px;
     top: -40px;
-    cursor: pointer;
-    border: none;
+
 }
 
-.button_form_close-btn:hover {
+.popup__btn_form_close-btn:hover {
     cursor: pointer;
     opacity: .6;
     -webkit-transition: linear, .8s;
@@ -21,7 +20,7 @@
 }
 
 @media screen and (max-width: 767px){
-    .button_form_close-btn {
+    .popup__btn_form_close-btn {
         width: 26px;
         height: 26px;
         right: 5px;

@@ -4,24 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
     <title>Mesto</title>
     <link rel="stylesheet" href="./pages/index.css">
-    <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page">
-    <div class="popup form">
-        <div class="popup__overlay"></div>
-        <div class="popup__content">
+    <div class="popup">
+        <form class="popup__content" name="popup">
             <h3 class="popup__title">Редактировать профиль</h3>
-            <div class="input">
-            <input type="text" placeholder="Фамилия Имя" name="" class="input__text input__text_type_name">
-            <input type="text" placeholder="Профессия" name="" class="input__text input__text_type_job">
-            <button type=submit class="button button_form_submit-btn button_action_save">Сохранить</button>
-            <button type=button class="button button_form_close-btn"></button>
-            </div>
-        </div>
+            <input type="text" placeholder="Фамилия Имя" name="name" class="popup__text popup__text_type_name">
+            <input type="text" placeholder="Профессия" name="job" class="popup__text popup__text_type_job">
+            <button id="save_popup-btn" class="button popup__btn_form_submit-btn popup__btn_action_save" type=button>Сохранить</button>
+            <button id="close_popup-btn" class="button popup__btn_form_close-btn" type=button></button>
+        </form>
     </div>
     <div class="page__container">
         <header class="header section page__header">
@@ -29,67 +26,68 @@
         </header>
         <main class="content section page__content">
             <section class="profile page__profile section">
-                    <div class="profile-info section">
-                        <img src="./images/avatar.jpg" alt="Аватар" class="avatar">
-                        <div class="profile-info__text">
-                            <p class="text text_type_name">Жак-Ив Кусто</p>
-                            <button type=button class="button button_form_edit-btn"></button>
-                            <p class="text text_type_job">Исследователь океана</p>
-                        </div>
-
+                <div class="profile-info section">
+                    <img src="./images/avatar.jpg" alt="Аватар" class="profile-info__avatar">
+                    <div class="profile-info__text">
+                        <h1 class="profile-info__title">Жак-Ив Кусто</h1>
+                        <button id="open_popup-btn" class="button profile-info__btn profile-info__btn_form_edit-btn" type=button></button>
+                        <p class="profile-info__job">Исследователь океана</p>
                     </div>
-                    <button type=submit class="button button_form_add-btn"></button>
+                </div>
+                <button class="button profile-info__btn profile-info__btn_form_add-btn" type=button></button>
             </section>
-            <section class="elements section page__elements">
-                <div class="card">
-                    <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Картинка" class="card__image">
-                <div class="card__title">
-                    <h2 class="card__title-text">Карачаевск</h2>
-                    <input class="button button_form_like">
-                </div>
-                </div>
-                <div class="card">
-                    <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Картинка" class="card__image">
-                    <div class="card__title">
-                        <h2 class="card__title-text">Гора Эльбрус</h2>
-                        <input class="button button_form_like">
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Картинка" class="card__image">
-                    <div class="card__title">
-                        <h2 class="card__title-text">Домбай</h2>
-                        <input class="button button_form_like">
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Картинка" class="card__image">
-                    <div class="card__title">
-                        <h2 class="card__title-text">Гора Эльбрус</h2>
-                        <input class="button button_form_like">
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Картинка" class="card__image">
-                    <div class="card__title">
-                        <h2 class="card__title-text">Домбай</h2>
-                        <input class="button button_form_like">
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Картинка" class="card__image">
-                    <div class="card__title">
-                        <h2 class="card__title-text">Карачаево-Черкесия</h2>
-                        <input class="button button_form_like">
-                    </div>
-                </div>
+            <section class="section ">
+                <ul class="elements page__elements">
+                    <li class="card">
+                       <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Монастырь в горах" class="card__image">
+                       <div class="card__title">
+                          <h2 class="card__title-text">Карачаевск</h2>
+                          <button class="button card__btn-like" type="button"></button>
+                       </div>
+                    </li>
+                    <li class="card">
+                       <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус" class="card__image">
+                       <div class="card__title">
+                           <h2 class="card__title-text">Гора Эльбрус</h2>
+                           <button class="button card__btn-like" type="button"></button>
+                       </div>
+                    </li>
+                    <li class="card">
+                       <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Гора Домбай" class="card__image">
+                       <div class="card__title">
+                           <h2 class="card__title-text">Домбай</h2>
+                           <button class="button card__btn-like" type="button"></button>
+                       </div>
+                    </li>
+                    <li class="card">
+                       <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Гора Эльбрус" class="card__image">
+                       <div class="card__title">
+                           <h2 class="card__title-text">Гора Эльбрус</h2>
+                           <button class="button card__btn-like" type="button"></button>
+                       </div>
+                    </li>
+                    <li class="card">
+                       <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Гора Доббай" class="card__image">
+                       <div class="card__title">
+                           <h2 class="card__title-text">Домбай</h2>
+                           <button class="button card__btn-like" type="button"></button>
+                       </div>
+                    </li>
+                    <li class="card">
+                       <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Монастырь в горах" class="card__image">
+                       <div class="card__title">
+                           <h2 class="card__title-text">Карачаево-Черкесия</h2>
+                           <button class="button card__btn-like" type="button"></button>
+                       </div>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer class="footer page__footer">
             <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
         </footer>
     </div>
-
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
