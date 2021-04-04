@@ -21,8 +21,8 @@
 @import url(../bloks/card/card.css);
 @import url(../bloks/card/__btn-like/card__btn-like.css);
 @import url(../bloks/card/__btn-like/_position/card__btn-like_position_active.css);
+@import url(../bloks/popup/__btn/popup__btn.css);
 @import url(../bloks/popup/__btn/_form/popup__btn_form_submit-btn.css);
-@import url(../bloks/popup/__btn/_action/popup__btn_action_save.css);
 @import url(../bloks/card/__image/card__image.css);
 @import url(../bloks/card/__title/card__title.css);
 @import url(../bloks/card/__title-text/card__title-text.css);
