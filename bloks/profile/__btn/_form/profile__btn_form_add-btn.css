@@ -1,12 +1,13 @@
-.profile-info__btn_form_add-btn {
+.profile__btn_form_add-btn {
     width: 150px;
     height: 50px;
     background: black url("../../../../images/add-button.svg") no-repeat center center;
+    background-size: 22px 22px;
     border: 2px solid white;
     border-radius: 2px;
 }
 
-.profile-info__btn_form_add-btn:hover {
+.profile__btn_form_add-btn:hover {
     opacity: .6;
     -webkit-transition: linear, .5s;
     -o-transition: linear, .5s;
@@ -14,8 +15,9 @@
 }
 
 @media screen and (max-width: 767px){
-    .profile-info__btn_form_add-btn {
+    .profile__btn_form_add-btn {
         width: 282px;
         height: 50px;
+        background-size: 16px 16px;
     }
 }

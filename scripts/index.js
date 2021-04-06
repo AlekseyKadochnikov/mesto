@@ -46,6 +46,6 @@ popupContent.addEventListener('keyup', function (event) {
 for (let i = 0; i < likeBtns.length; i+=1){
     let currentLikeBtn = likeBtns[i];
     currentLikeBtn.addEventListener('click', function (){
-        likeBtns[i].classList.add('card__btn-like_position_active');
+        likeBtns[i].classList.add('card__btn-like_active');
     });
 }

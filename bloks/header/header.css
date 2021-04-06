@@ -1,8 +1,7 @@
 .header {
     font-family: 'Inter', Arial, sans-serif;
     color: #fff;
-    border-bottom: 1px solid #545454;
-    opacity: .7;
+    border-bottom: 1px solid rgba(84, 84, 84, .7);
 }
 
 @media screen  and (max-width: 879px){
